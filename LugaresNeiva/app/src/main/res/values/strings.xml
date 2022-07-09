@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Lugares Neiva</string>
+    <string name="accion_mostrar">Mostrar Lugares</string>
+    <string name="accion_preferencias">Preferencias</string>
+    <string name="accion_acerca_de">Acerca de</string>
+    <string name="accion_salir">Salir</string>
+    <string name="action_settings">Configuración</string>
+    <string name="large_text">Settings aaaaaaa bbbbbbbbbb</string>
+    <string name="acerca_de">Esta aplicación ha sido desarrollada en el año 2022, como proyecto durante el curso Programación de Aplicaciones para Dispositivos Móviles, de la institución SENA.</string>
+</resources>
