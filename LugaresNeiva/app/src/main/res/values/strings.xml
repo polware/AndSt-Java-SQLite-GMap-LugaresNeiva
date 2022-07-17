@@ -5,6 +5,27 @@
     <string name="accion_acerca_de">Acerca de</string>
     <string name="accion_salir">Salir</string>
     <string name="action_settings">Configuración</string>
-    <string name="large_text">Settings aaaaaaa bbbbbbbbbb</string>
     <string name="acerca_de">Esta aplicación ha sido desarrollada en el año 2022, como proyecto durante el curso Programación de Aplicaciones para Dispositivos Móviles, de la institución SENA.</string>
+    <string name="buscar">Buscar</string>
+    <string name="compartir">Compartir</string>
+    <string name="c_mo_llegar">Cómo llegar</string>
+    <string name="editar">Editar</string>
+    <string name="borrar">Borrar</string>
+    <string name="guardar">Guardar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="fotografia">Fotografía</string>
+    <string name="mapa">Mapa</string>
+    <string name="nombre">Nombre:</string>
+    <string name="tipo">Tipo:</string>
+    <string name="direcci_n">Dirección:</string>
+    <string name="comentario">Comentario:</string>
+    <string name="url">Url:</string>
+    <string name="telefono">Telefono:</string>
+    <string name="nombre_del_lugar">Nombre del lugar</string>
+    <string name="logo_del_tipo">Logo del tipo</string>
+    <string name="bt_guardar">Guardar</string>
+    <string name="bt_cancelar">Cancelar</string>
+    <string name="longitud">Longitud:</string>
+    <string name="latitud">Latitud:</string>
+    />
 </resources>

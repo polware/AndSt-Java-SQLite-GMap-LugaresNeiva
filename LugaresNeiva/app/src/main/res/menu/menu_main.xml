@@ -1,10 +1,27 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.lugaresneiva.MainActivity">
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
     <item
         android:id="@+id/action_settings"
-        android:orderInCategory="100"
+        android:orderInCategory="10"
         android:title="@string/action_settings"
+        android:icon="@android:drawable/ic_menu_preferences"
         app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_search"
+        android:orderInCategory="20"
+        android:title="@string/buscar"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="always|collapseActionView" />
+    <item
+        android:id="@+id/menu_mapa"
+        android:icon="@android:drawable/ic_menu_myplaces"
+        android:orderInCategory="30"
+        android:title="@string/mapa"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menu_acercaDe"
+        android:orderInCategory="40"
+        android:title="@string/accion_acerca_de"
+        android:icon="@android:drawable/ic_menu_info_details"
+        app:showAsAction="ifRoom|withText" />
 </menu>

@@ -9,7 +9,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
         <TextView
             android:id="@+id/t_nombre"
@@ -102,61 +102,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintLeft_toRightOf="@id/t_telefono"
-            app:layout_constraintStart_toEndOf="@+id/t_telefono" />
-
-        <TextView
-            android:id="@+id/t_longitud"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:text="@string/longitud"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/telefono" />
-
-        <EditText
-            android:id="@+id/longitud"
-            android:layout_width="220dp"
-            android:layout_height="40dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
-            android:hint="Coordenada de longitud"
-            android:inputType="numberDecimal"
-            app:layout_constraintBaseline_toBaselineOf="@+id/t_longitud"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintLeft_toRightOf="@id/t_longitud"
-            app:layout_constraintStart_toEndOf="@+id/t_longitud"
-            tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
-
-        <TextView
-            android:id="@+id/t_latitud"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:textStyle="bold"
-            android:text="@string/latitud"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/longitud" />
-
-        <EditText
-            android:id="@+id/latitud"
-            android:layout_width="220dp"
-            android:layout_height="40dp"
-            android:layout_marginStart="22dp"
-            android:layout_marginEnd="8dp"
-            android:hint="Coordenada de latitud"
-            android:inputType="numberDecimal"
-            app:layout_constraintBaseline_toBaselineOf="@+id/t_latitud"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.01"
-            app:layout_constraintLeft_toRightOf="@id/t_latitud"
-            app:layout_constraintStart_toEndOf="@+id/t_latitud"
-            tools:ignore="TouchTargetSizeCheck" />
+            app:layout_constraintStart_toEndOf="@+id/t_telefono"
+            tools:ignore="TextContrastCheck" />
 
         <TextView
             android:id="@+id/t_url"
@@ -168,7 +115,7 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/latitud" />
+            app:layout_constraintTop_toBottomOf="@id/telefono" />
 
         <EditText
             android:id="@+id/url"
@@ -204,6 +151,32 @@
             android:minHeight="48dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/t_comentario" />
+
+        <Button
+            android:id="@+id/bt_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="76dp"
+            android:layout_marginTop="36dp"
+            android:background="@color/primary"
+            android:text="@string/bt_guardar"
+            android:textColor="#ffffff"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/comentario" />
+
+        <Button
+            android:id="@+id/bt_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="76dp"
+            android:background="@color/primary"
+            android:text="@string/bt_cancelar"
+            android:textColor="#ffffff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.775"
+            app:layout_constraintStart_toEndOf="@+id/bt_save"
+            app:layout_constraintTop_toBottomOf="@+id/comentario" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
