@@ -1,2 +1,3 @@
-# Android_Studio
-Proyecto de Android Studio con lenguaje Java.
+# Proyecto en Android Studio + Java
+
+Aplicación diseñada para la plataforma Android.
