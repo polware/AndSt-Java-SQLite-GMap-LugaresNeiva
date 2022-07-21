@@ -1,4 +1,4 @@
-# Proyecto en Android Studio + Java
+# Aplicación en Android Studio (Java + SQLite)
 
 Aplicación diseñada para la plataforma Android.
 
