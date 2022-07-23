@@ -1,6 +1,5 @@
 package com.example.lugaresneiva.use_cases;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -17,7 +16,6 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentManager;
 
-import com.example.lugaresneiva.DeleteActivity;
 import com.example.lugaresneiva.EditPlaceActivity;
 import com.example.lugaresneiva.MyApplication;
 import com.example.lugaresneiva.NewPlaceActivity;
@@ -87,14 +85,6 @@ public class CasosUsoLugar {
         if (fragment != null)
             fragment.startActivityForResult(i, codigoSolicitud);
         else actividad.startActivityForResult(i, codigoSolicitud);
-    }
-
-    public void confirmarBorrar(int pos, int codidoSolicitud){
-        Intent i = new Intent(actividad, DeleteActivity.class);
-        i.putExtra("pos", pos);
-        if (fragment != null)
-            fragment.startActivityForResult(i, codidoSolicitud);
-        else actividad.startActivityForResult(i, codidoSolicitud);
     }
 
     public void borrar(int id) {

@@ -1,6 +1,9 @@
 package com.example.lugaresneiva;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -187,10 +190,37 @@ public class VistaLugarFragment extends Fragment {
                 usoLugar.editar(pos, RESULTADO_EDITAR);
                 return true;
             case R.id.accion_borrar:
-                usoLugar.confirmarBorrar(pos, RESULTADO_BORRAR);
+                showAlertDelete();
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
     }
+
+    private void showAlertDelete(){
+        Context context = this.getContext();
+        AlertDialog.Builder buider = new AlertDialog.Builder(context);
+        View viewInflated = LayoutInflater.from(context).inflate(R.layout.alert_delete, null);
+        String titulo = lugar.getNombre();
+        buider.setTitle(titulo);
+        buider.setView(viewInflated);
+        buider.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                int id = adaptador.idPosicion(pos);
+                usoLugar.borrar(id);
+            }
+        });
+
+        buider.setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                return;
+            }
+        });
+
+        AlertDialog dialog = buider.create();
+        dialog.show();
+    }
+
 }

@@ -35,7 +35,6 @@ public class AdaptadorBD extends AdaptadorLugares {
 
     public int posicionId(int id) {
         int pos = 0;
-        //while (pos == getItemCount() && idPosicion(pos) != id) pos++;
         while (pos < getItemCount() && idPosicion(pos)!= id) pos++;
 
         if (pos >= getItemCount())

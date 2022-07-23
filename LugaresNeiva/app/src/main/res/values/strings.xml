@@ -27,5 +27,8 @@
     <string name="bt_cancelar">Cancelar</string>
     <string name="longitud">Longitud:</string>
     <string name="latitud">Latitud:</string>
-    />
+    <string name="alerta_mensaje">¿Está seguro que desea borrar el lugar?</string>
+    <string name="alerta_titulo">Por favor confirmar:</string>
+    <string name="ok">Si</string>
+    <string name="cancel">No</string>
 </resources>
